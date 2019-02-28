@@ -9,7 +9,14 @@ public class OnAsteroidCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-     AsteroidTag  asteroid =   collision.rigidbody.gameObject.GetComponent<AsteroidTag>();
+
+
+        AsteroidTag asteroid = collision.gameObject.GetComponent<AsteroidTag>();
+        if (collision.rigidbody)
+            asteroid = collision.rigidbody.gameObject.GetComponent<AsteroidTag>();
+        
+
+        if ( asteroid!=null)
         m_collisionWithAsteroid.Invoke(asteroid,collision);
     }
 
