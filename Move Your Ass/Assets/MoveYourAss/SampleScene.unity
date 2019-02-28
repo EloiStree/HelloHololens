@@ -676,6 +676,8 @@ GameObject:
   - component: {fileID: 2069213131}
   - component: {fileID: 2069213130}
   - component: {fileID: 2069213132}
+  - component: {fileID: 2069213134}
+  - component: {fileID: 2069213133}
   m_Layer: 0
   m_Name: SpaceShip
   m_TagString: Untagged
@@ -730,3 +732,47 @@ MonoBehaviour:
   m_affectedSpaceShip: {fileID: 2069213131}
   m_cameraDirection: {fileID: 534669905}
   m_wantedPosition: {fileID: 809025247}
+--- !u!114 &2069213133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069213129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a76e9b4a7869254eaec86daf2ee3c00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_explosion: {fileID: 1120526629068170324, guid: 92f429bdac5dc8849941783bf9758ba2,
+    type: 3}
+  m_explosionPosition: {fileID: 2069213131}
+  m_spaceShipToDestroy: {fileID: 2069213129}
+--- !u!114 &2069213134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069213129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf420639768b23458efd33ef1dffd29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_collisionWithAsteroid:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2069213133}
+        m_MethodName: BigBadaBoum
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: OnAsteroidCollision+OnAsteroidHitEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
