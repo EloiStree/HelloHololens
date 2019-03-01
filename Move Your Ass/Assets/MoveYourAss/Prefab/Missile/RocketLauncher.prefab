@@ -1,62 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!135 &7136248615981732322
-SphereCollider:
+--- !u!1 &5963164834743703972
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80633979052389209}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.01
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7136248615981732320
-MonoBehaviour:
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235423312514493069}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &235423312514493069
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80633979052389209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af4b4f8507559fb4a9372a22795e2a35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_missileDirection: {fileID: 7035698877096257796}
-  m_target: {fileID: 0}
-  m_speed: 5
-  m_angleDegreeLerp: 90
---- !u!114 &7136248615981732321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 80633979052389209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cf420639768b23458efd33ef1dffd29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_collisionWithAsteroid:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 80633979052389209}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: OnAsteroidCollision+OnAsteroidHitEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  m_GameObject: {fileID: 5963164834743703972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3373938970297232243}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8103798753397810083
 GameObject:
   m_ObjectHideFlags: 0
@@ -67,6 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3373938970297232243}
   - component: {fileID: 8103798753397810084}
+  - component: {fileID: 1886086824}
   m_Layer: 0
   m_Name: RocketLauncher
   m_TagString: Untagged
@@ -85,7 +59,7 @@ Transform:
   m_LocalPosition: {x: -0.067, y: 0.045, z: -0.029}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 7035698877096257796}
+  - {fileID: 235423312514493069}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -101,85 +75,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2280b7f9a6044842b83ed65cf38ce9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locker: {fileID: 7136248615981732320}
---- !u!1001 &7068246111790080646
-PrefabInstance:
+  m_missilePrefab: {fileID: 9140749527432153045, guid: 4d821bdaf8390e348ac2116cbae82306,
+    type: 3}
+  m_missileToLaunch: {fileID: 0}
+  m_missileSpawnPosition: {fileID: 235423312514493069}
+  m_spawnTime: 3
+--- !u!114 &1886086824
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3373938970297232243}
-    m_Modifications:
-    - target: {fileID: 7136248615981732319, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_Name
-      value: Missile
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d821bdaf8390e348ac2116cbae82306, type: 3}
---- !u!1 &80633979052389209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7136248615981732319, guid: 4d821bdaf8390e348ac2116cbae82306,
-    type: 3}
-  m_PrefabInstance: {fileID: 7068246111790080646}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7035698877096257796 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 267021594334284674, guid: 4d821bdaf8390e348ac2116cbae82306,
-    type: 3}
-  m_PrefabInstance: {fileID: 7068246111790080646}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8103798753397810083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee44997fbbbf9f748af9e7fe4c75646e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onClickDown:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8103798753397810084}
+        m_MethodName: LaunchMissileOnTarget
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  m_onClickUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
