@@ -5,10 +5,16 @@ using UnityEngine;
 public class LifeTime : MonoBehaviour
 {
     public float m_maxTime = 20;
-
+    public DestructorCall m_onLifeOut;
     void Start()
     {
-        Destroy(this.gameObject, m_maxTime);   
+        Invoke("Kill", m_maxTime);
+    }
+    void Kill() {
+        if (m_onLifeOut == null)
+            Destroy(this.gameObject);
+        else 
+        m_onLifeOut.ProcessedToDestroy();
     }
 
 }

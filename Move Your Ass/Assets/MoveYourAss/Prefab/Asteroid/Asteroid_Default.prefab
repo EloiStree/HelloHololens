@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7354504951148011256}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 3070995859844016255}
   - component: {fileID: 2439944768544289426}
   - component: {fileID: 5132453401932415738}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Asteroid_Default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 7354504952311382023}
   - component: {fileID: 7354504952311382020}
   - component: {fileID: 7354504952311382021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
