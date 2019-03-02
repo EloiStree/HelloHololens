@@ -17,7 +17,6 @@ public class FakeCamera : MonoBehaviour
         m_currentRotationVertical += rotateCameraOf.y * Time.deltaTime;
         m_affectedTransform.localRotation =Quaternion.Euler( new Vector3(-m_currentRotationVertical, m_currentRotationHorizontal, 0));
 
-
     }
     public void Reset()
     {

@@ -293,5 +293,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10084a2f47a33f478d5b697a58bb413, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_maxTime: 2
+  m_maxTime: 1
   m_onLifeOut: {fileID: 8243358719188502049}

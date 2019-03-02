@@ -28,8 +28,9 @@ public class TargetableByHololensFocus :MonoBehaviour, IFocusable
 
         m_lastTarget = null;
         m_targetsFocus.Remove(this);
-        if (m_useDebugColor)
-            GetComponentInChildren<Renderer>().material.color = Color.white;
+        Renderer renderer = GetComponentInChildren<Renderer>();
+        if (m_useDebugColor && renderer)
+            renderer.material.color = Color.white;
     }
 
 }
