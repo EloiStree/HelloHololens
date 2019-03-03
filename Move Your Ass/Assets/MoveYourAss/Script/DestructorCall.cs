@@ -31,4 +31,8 @@ public class DestructorCall : MonoBehaviour, DestructorCallInterface
         else Destroy(gameObject);
 
     }
+
+    public void DestroyTarget(GameObject obj) {
+        Destroy(obj);
+    }
 }

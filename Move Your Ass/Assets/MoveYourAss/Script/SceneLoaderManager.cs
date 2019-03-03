@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class SceneLoaderManager : MonoBehaviour
@@ -10,6 +11,11 @@ public class SceneLoaderManager : MonoBehaviour
     public enum FadeWanted { Transparent , Opaque}
     public FadeWanted m_fadeWanted = FadeWanted.Transparent;
     public float m_fadeSpeed = 0.5f;
+
+    public string m_nextScene;
+    public UnityEvent m_onRequestNextScene;
+    public UnityEvent m_onImmediatSceneLoading;
+
     void Start()
     {
         SetAlphatTo(1f);
@@ -39,13 +45,19 @@ public class SceneLoaderManager : MonoBehaviour
     }
     public void RestartLevel(float time=2)
     {
+        m_onRequestNextScene.Invoke();
         FadeOut();
         Invoke("RestartLevelDirectly", time);
     }
 
     public void RestartLevelDirectly()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        VoidRestart.m_callBackScene = SceneManager.GetActiveScene().name;
+        m_onImmediatSceneLoading.Invoke();
+        if(!string.IsNullOrEmpty(m_nextScene))
+            SceneManager.LoadScene(m_nextScene);
+        else
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
     public static void RestartLevelFromManagerTheScene(float time = 2)
