@@ -17,7 +17,7 @@ public class SpaceShipPosition : MonoBehaviour
     void Update()
     {
 
-        if (m_cameraDirection && m_wantedPosition) {
+        if (m_cameraDirection!=null && m_wantedPosition!=null) {
             Vector3 cameraDirection = m_cameraDirection.forward;
             cameraDirection.y = 0;
             cameraDirection.x = 0;
@@ -27,7 +27,9 @@ public class SpaceShipPosition : MonoBehaviour
 
 
         }
-        
+        else
+            TryToFindPositionToFollow();
+
     }
     private void Reset()
     {
