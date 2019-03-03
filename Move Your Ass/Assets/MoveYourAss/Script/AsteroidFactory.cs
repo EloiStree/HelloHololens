@@ -12,6 +12,9 @@ public class AsteroidFactory : MonoBehaviour
     public float m_minTimeBetweenSpawn=0.1f;
     public float m_maxTimeBetweenSpawn=3f;
 
+    public float m_minSize=1;
+    public float m_maxSize=5;
+
     IEnumerator Start()
     {
         while (true)
@@ -25,7 +28,13 @@ public class AsteroidFactory : MonoBehaviour
     void Spawn()
     {
         GameObject asteroid =  GameObject.Instantiate(GetRandomAsteroid(), GetRandomPosition(), m_spawnDirection.rotation);
+        asteroid.transform.localScale = Vector3.one * GetRandomFloat(m_minSize, m_maxSize);
         
+    }
+
+    private float GetRandomFloat(float min, float max)
+    {
+        return UnityEngine.Random.Range(min, max);
     }
 
     private Vector3 GetRandomPosition()

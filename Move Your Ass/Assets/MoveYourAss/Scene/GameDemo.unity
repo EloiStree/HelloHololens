@@ -1711,6 +1711,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420663708}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1558429306 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8103798753397810084, guid: 456473c5a4f89c147b816bbccd5f6552,
+    type: 3}
+  m_PrefabInstance: {fileID: 2125285137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2280b7f9a6044842b83ed65cf38ce9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1662969085
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1008403663707268951, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_Name
+      value: IfNoCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 16.819336
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008403663707268949, guid: 488043c418c4931419c2e734939397f1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 488043c418c4931419c2e734939397f1, type: 3}
 --- !u!1 &1717803075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,6 +1845,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717803075}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1762805840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8103798753397810084, guid: 456473c5a4f89c147b816bbccd5f6552,
+    type: 3}
+  m_PrefabInstance: {fileID: 6770700893651194231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2280b7f9a6044842b83ed65cf38ce9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1774616428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,17 +1936,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8103798753500153057}
-        m_MethodName: ProcessedToDestroy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_onClickUp:
@@ -1869,17 +1951,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8103798753500153058}
         m_MethodName: Create
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8103798753500153057}
-        m_MethodName: ProcessedToDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1926,8 +1997,10 @@ MonoBehaviour:
   m_maxRange: 5
   m_prefabs:
   - {fileID: 7354504951464741466, guid: 2964c83e3dc03494ea2aa3c061cfa728, type: 3}
-  m_minTimeBetweenSpawn: 0.01
-  m_maxTimeBetweenSpawn: 0.2
+  m_minTimeBetweenSpawn: 0.07
+  m_maxTimeBetweenSpawn: 0.3
+  m_minSize: 1
+  m_maxSize: 3.5
 --- !u!4 &1799152470
 Transform:
   m_ObjectHideFlags: 0
@@ -1953,6 +2026,7 @@ GameObject:
   - component: {fileID: 1852027309}
   - component: {fileID: 1852027308}
   - component: {fileID: 1852027310}
+  - component: {fileID: 1852027311}
   m_Layer: 0
   m_Name: WordsListener
   m_TagString: Untagged
@@ -1983,6 +2057,12 @@ MonoBehaviour:
     KeyCode: 32
   - Keyword: Piou
     KeyCode: 51
+  - Keyword: Nuke
+    KeyCode: 53
+  - Keyword: Fire
+    KeyCode: 52
+  - Keyword: ignition
+    KeyCode: 52
   recognitionConfidenceLevel: 2
 --- !u!4 &1852027309
 Transform:
@@ -2051,6 +2131,89 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_lastWord: 
+--- !u!114 &1852027311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852027307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d6513c2cdf97f409654a2a4114d9b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Keywords:
+  - Keyword: Boum
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Piou
+    Response:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: Fire
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1762805840}
+          m_MethodName: LaunchMissileOnTarget
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1558429306}
+          m_MethodName: LaunchMissileOnTarget
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: ignition
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1762805840}
+          m_MethodName: LaunchMissileOnTarget
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1558429306}
+          m_MethodName: LaunchMissileOnTarget
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  IsGlobalListener: 1
+  PersistentKeywords: 0
 --- !u!1 &1947899415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2773,6 +2936,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1558429306}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LaunchMissileOnTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
 --- !u!4 &2125285138 stripped
@@ -2879,7 +3066,7 @@ Transform:
   m_GameObject: {fileID: 8103798753500153056}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.002, y: -0.043, z: -0.028999984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3.223949, y: 3.223949, z: 3.223949}
   m_Children: []
   m_Father: {fileID: 2069213131}
   m_RootOrder: 2
@@ -2967,6 +3154,30 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1762805840}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LaunchMissileOnTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 1886086824, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
+      propertyPath: m_onOneWordRecognized.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 456473c5a4f89c147b816bbccd5f6552, type: 3}
 --- !u!1 &8103798753500153056
@@ -3043,17 +3254,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8103798753500153058}
         m_MethodName: Create
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 8103798753500153057}
-        m_MethodName: ProcessedToDestroy
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

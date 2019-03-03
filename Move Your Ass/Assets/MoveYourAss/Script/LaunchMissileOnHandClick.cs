@@ -27,12 +27,13 @@ public class LaunchMissileOnHandClick : MonoBehaviour
     {
         if (!m_missileToLaunch)
             return;
+        m_missileToLaunch.Move();
         TargetableByHololensFocus focus = TargetableByHololensFocus.GetLastFocused();
         if (focus)
         {
             m_missileToLaunch.m_target = focus.transform;
-            Invoke("SpawnNewMissile", m_spawnTime);
         }
+        Invoke("SpawnNewMissile", m_spawnTime);
     }
      void SpawnNewMissile()
     {
