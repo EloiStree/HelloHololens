@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2280b7f9a6044842b83ed65cf38ce9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_missilePrefab: {fileID: 9140749527432153045, guid: 4d821bdaf8390e348ac2116cbae82306,
+  m_missilePrefab: {fileID: 9140749527432153045, guid: def32a79f087d0045b020272e390572c,
     type: 3}
   m_missileToLaunch: {fileID: 0}
   m_missileSpawnPosition: {fileID: 235423312514493069}

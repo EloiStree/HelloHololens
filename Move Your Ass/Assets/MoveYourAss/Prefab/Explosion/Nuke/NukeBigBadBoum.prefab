@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_explosion: {fileID: 3599661249095429603}
-  m_growingMultiplicator: 60
+  m_growingMultiplicator: 20
   m_growingCurved:
     serializedVersion: 2
     m_Curve:

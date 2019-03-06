@@ -8,8 +8,10 @@ public class LaunchMissileOnHandClick : MonoBehaviour
 {
     public GameObject m_missilePrefab;
     public MoveTowardGivenTarget m_missileToLaunch;
+    public GameObject m_missilReadyVisual;
     public Transform m_missileSpawnPosition;
     public float m_spawnTime=3f;
+    public bool m_missileReady;
     public void Start()
     {
         SpawnNewMissile();
@@ -27,13 +29,15 @@ public class LaunchMissileOnHandClick : MonoBehaviour
     {
         if (!m_missileToLaunch)
             return;
+        Invoke("SpawnNewMissile", m_spawnTime);
         m_missileToLaunch.Move();
+        m_missileToLaunch.gameObject.SetActive(true);
+        m_missileReady = false;
         TargetableByHololensFocus focus = TargetableByHololensFocus.GetLastFocused();
         if (focus)
         {
             m_missileToLaunch.m_target = focus.transform;
         }
-        Invoke("SpawnNewMissile", m_spawnTime);
     }
      void SpawnNewMissile()
     {
@@ -41,6 +45,8 @@ public class LaunchMissileOnHandClick : MonoBehaviour
         missile.transform.localScale = m_missileSpawnPosition.localScale;
         missile.transform.parent = m_missileSpawnPosition;
         m_missileToLaunch = missile.GetComponent<MoveTowardGivenTarget>();
+        missile.SetActive(false);
+        m_missileReady = true;
     }
 
     

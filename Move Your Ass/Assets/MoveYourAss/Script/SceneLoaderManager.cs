@@ -39,18 +39,21 @@ public class SceneLoaderManager : MonoBehaviour
 
     }
 
+    public void SetNameOfSceneToLoad(string name) {
+        m_nextScene = name;
+    }
     private void SetAlphatTo(float alpha)
     {
         m_fadeMaterial.color = new Color(0, 0, 0, alpha);
     }
-    public void RestartLevel(float time=2)
+    public void RestartOrLoadLevel(float time=2)
     {
         m_onRequestNextScene.Invoke();
         FadeOut();
-        Invoke("RestartLevelDirectly", time);
+        Invoke("RestartOrLoadLevelDirectly", time);
     }
 
-    public void RestartLevelDirectly()
+    public void RestartOrLoadLevelDirectly()
     {
         VoidRestart.m_callBackScene = SceneManager.GetActiveScene().name;
         m_onImmediatSceneLoading.Invoke();
@@ -60,11 +63,11 @@ public class SceneLoaderManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
-    public static void RestartLevelFromManagerTheScene(float time = 2)
+    public static void RestartOrLoadLevelFromManagerTheScene(float time = 2)
     {
         SceneLoaderManager manager = GameObject.FindObjectOfType<SceneLoaderManager>();
         if (manager != null)
-            manager.RestartLevel(time);
+            manager.RestartOrLoadLevel(time);
     }
 
     public void FadeOut() {

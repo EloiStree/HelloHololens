@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MoveYourAss/Scene/PlatformSwitch.unity
+    guid: c19dafeb0dac9434a82fffb7cab6a08b
+  - enabled: 1
+    path: Assets/MoveYourAss/Scene/CameraFake.unity
+    guid: 5de4e694385e2c040920e2fa610f0542
+  - enabled: 1
+    path: Assets/MoveYourAss/Scene/CameraMixedReality.unity
+    guid: 0e5cf73aca7e36d4b9f19f2080399080
+  - enabled: 1
+    path: Assets/MoveYourAss/Scene/CameraOculusGoAndGear.unity
+    guid: f67074e1924d63e4c965e2ad2272df38
+  - enabled: 1
     path: Assets/MoveYourAss/Scene/GameDemo.unity
     guid: 8dbaa16e851b06b498fa356f6d7ca3d2
   - enabled: 1
