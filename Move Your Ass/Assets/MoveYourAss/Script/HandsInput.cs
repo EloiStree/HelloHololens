@@ -5,11 +5,14 @@ using HoloToolkit.Unity;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+#if UNITY_WSA
 using UnityEngine.XR.WSA.Input;
+#endif
 
 
     public class HandsInput : SingleInstance<HandsInput>
     {
+#if UNITY_WSA
     [System.Serializable]
         public struct HandState
         {
@@ -295,7 +298,7 @@ using UnityEngine.XR.WSA.Input;
         }
 
         // Hand State utilities
-        #region Hand Registration
+#region Hand Registration
         private int RegisterHand(uint id, Vector3 position)
         {
             int handIndex = GetRegisteredHandIndex(id);
@@ -374,9 +377,9 @@ using UnityEngine.XR.WSA.Input;
             return index;
         }
 
-        #endregion
+#endregion
 
-        #region OtherThread
+#region OtherThread
 
         // IMPORTANT
         // Everything below this point is executed on a separate thread.  For thread safety,
@@ -461,5 +464,6 @@ using UnityEngine.XR.WSA.Input;
             }
         }
 
-        #endregion
+#endregion
+#endif
     }

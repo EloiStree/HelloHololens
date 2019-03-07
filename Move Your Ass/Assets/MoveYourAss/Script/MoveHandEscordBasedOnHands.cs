@@ -5,6 +5,7 @@ using UnityEngine.XR;
 
 public class MoveHandEscordBasedOnHands : MonoBehaviour
 {
+#if UNITY_WSA
     public HandsInput m_handsInput;
     public HandBasicTag [] m_handsTransform;
   
@@ -36,4 +37,5 @@ public class MoveHandEscordBasedOnHands : MonoBehaviour
         }
 
     }
+#endif
 }

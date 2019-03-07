@@ -14,10 +14,12 @@ public class OnAsteroidCollision : MonoBehaviour
         AsteroidTag asteroid = collision.gameObject.GetComponent<AsteroidTag>();
         if (collision.rigidbody)
             asteroid = collision.rigidbody.gameObject.GetComponent<AsteroidTag>();
+        if (asteroid == null)
+            asteroid = collision.gameObject.GetComponentInParent<AsteroidTag>();
         
 
         if ( asteroid!=null)
-        m_collisionWithAsteroid.Invoke(asteroid,collision);
+             m_collisionWithAsteroid.Invoke(asteroid,collision);
     }
 
     [System.Serializable]
