@@ -5,14 +5,13 @@ using HoloToolkit.Unity;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-#if UNITY_WSA
+
 using UnityEngine.XR.WSA.Input;
-#endif
+
 
 
     public class HandsInput : SingleInstance<HandsInput>
     {
-#if UNITY_WSA
     [System.Serializable]
         public struct HandState
         {
@@ -465,5 +464,4 @@ using UnityEngine.XR.WSA.Input;
         }
 
 #endregion
-#endif
     }

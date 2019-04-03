@@ -134,7 +134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2517881781430378356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4272654, y: 1.0062131, z: 2.4421406}
+  m_LocalPosition: {x: 1.4272654, y: -0.46378696, z: -7.5578594}
   m_LocalScale: {x: 14.776235, y: 5.7734947, z: 1}
   m_Children:
   - {fileID: 2517881781522179531}
@@ -261,8 +261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2517881781654104778}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4272654, y: 1.0062131, z: 2.4421406}
-  m_LocalScale: {x: 7.4928536, y: 5.7735033, z: 1}
+  m_LocalPosition: {x: 1.4272654, y: -0.46378696, z: -7.5578594}
+  m_LocalScale: {x: 6.424694, y: 5.7734947, z: 1}
   m_Children:
   - {fileID: 2517881780124105223}
   m_Father: {fileID: 2517881781220411085}
@@ -284,5 +284,5 @@ MonoBehaviour:
   m_linkedCamera: {fileID: 0}
   m_distance: 5
   useAntiCheat: 0
-  m_height: 5.7735033
-  m_width: 7.4928536
+  m_height: 5.7734947
+  m_width: 6.424694
