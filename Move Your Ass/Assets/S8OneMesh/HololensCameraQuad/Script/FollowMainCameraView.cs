@@ -36,7 +36,8 @@ public class FollowMainCameraView : MonoBehaviour
     private void Refresh()
     {
         Camera cam = m_linkedCamera == null ? Camera.main : m_linkedCamera;
-
+        if (cam == null)
+            return;
         m_border.rotation = cam.transform.rotation;
         Vector3 botLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, m_distance));
         Vector3 topRight = cam.ViewportToWorldPoint(new Vector3(1, 1, m_distance));

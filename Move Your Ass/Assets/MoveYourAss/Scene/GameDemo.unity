@@ -62551,17 +62551,17 @@ PrefabInstance:
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
       propertyPath: m_AABB.m_Extent.x
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
       propertyPath: m_AABB.m_Extent.y
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
       propertyPath: m_AABB.m_Extent.z
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
@@ -62606,7 +62606,7 @@ PrefabInstance:
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
       propertyPath: m_Quality
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9043395761406095215, guid: 22785ca936b33734a80c0d0b638351fa,
         type: 3}
