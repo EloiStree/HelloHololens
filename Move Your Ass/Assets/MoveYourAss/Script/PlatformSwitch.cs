@@ -36,11 +36,11 @@ public class PlatformSwitch : MonoBehaviour
             {
     #if UNITY_EDITOR
                 m_onEditorVR.Invoke();
-    #elif UNITY_WSA
+#elif UNITY_ANDROID
                 m_onAndroidVR.Invoke();
-    #elif UNITY_ANDROID
+#elif UNITY_WSA
                 m_onUWPVR.Invoke();
-    #endif
+#endif
             }
             else {
     #if UNITY_EDITOR

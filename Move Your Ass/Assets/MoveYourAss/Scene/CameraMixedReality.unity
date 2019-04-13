@@ -525,6 +525,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SpatialMapping
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010302963436, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013298573622, guid: 2ed75ffdf9031c94e8bce4b3d17b9928, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.3945312
@@ -1512,7 +1516,7 @@ PrefabInstance:
     - target: {fileID: 2517881781654104777, guid: ebb5bf0aa70e2194f88c44360953049b,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.564743
+      value: 1.5663548
       objectReference: {fileID: 0}
     - target: {fileID: 2517881781654104777, guid: ebb5bf0aa70e2194f88c44360953049b,
         type: 3}

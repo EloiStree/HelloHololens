@@ -13,6 +13,7 @@ public class DestructorCall : MonoBehaviour, DestructorCallInterface
     public bool m_useUnityDestroyAfter=true;
     public void ProcessedToDestroy()
     {
+        
         m_toDoBeforeDestruction.Invoke();
         if (m_useUnityDestroyAfter)
             CallUnityDestructor();
